@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 import About from './components/about';
@@ -9,7 +9,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
+  //Link
 }from "react-router-dom"
 function App() {
 const [mode,setmode] = useState('light')
@@ -51,7 +51,7 @@ const toggleMode=()=>{
 
 <div className="container my-3">
   <Routes>
-    <Route exact path='/about' element={<About/>}/>
+    <Route exact path='/about' element={<About mode = {mode}/> }/>
     
       
 
